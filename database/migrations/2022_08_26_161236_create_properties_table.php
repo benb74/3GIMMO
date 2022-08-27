@@ -20,6 +20,7 @@ return new class extends Migration
             $table->float('prix_annonce', 10, 2);
             $table->float('surface_habitable', 6, 2);
             $table->integer('nombre_de_piece');
+            $table->integer('id_seller')->nullable(false);
         });
     }
 
