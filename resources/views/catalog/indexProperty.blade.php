@@ -1,6 +1,7 @@
 @extends('home')
+{{--@extends connects to home.blade.php--}}
 @section('content')
-
+{{--@section is the starting point and @endsection the ending point to what is insert at the @yield of home page--}}
     <div class="album py-5" style="background-color: #053840;">
         <div class="container" style="background-color: #053840;">
 

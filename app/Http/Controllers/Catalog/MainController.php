@@ -10,17 +10,20 @@ use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
+//  function index is used to collect all the properties from the db
     public function index()
     {
         $properties = Property::all();
         return view('catalog.indexProperty', compact('properties'));
     }
 
+//    function addProperty is used to add a property in the DB
     public function addProperty()
     {
         return view('catalog.addProperty');
     }
 
+//    function saveProperty is used to save a property in the DB when adding or updating
     public function saveProperty(Request $request)
     {
         DB::table('properties')->insert([
@@ -33,12 +36,14 @@ class MainController extends Controller
         return back()->with('property_saved', 'Enregistrement réussi !');
     }
 
+//    function editProperty is used to edit property datas from the DB
     public function editProperty($id)
     {
         $property = DB::table('properties')->where('id', $id)->first();
         return view('catalog.editProperty', compact('property'));
     }
 
+//    function updateProperty is used when updating a property with new datas
     public function updateProperty(Request $request)
     {
         DB::table('properties')->where('id', $request->id)->update([
@@ -51,6 +56,7 @@ class MainController extends Controller
         return back()->with('property_updated', 'Propriété mise a jour avec succès !');
     }
 
+//    function deleteProperty is used to delete a property from the DB
     public function deleteProperty($id)
     {
         DB::table('properties')->where('id', $id)->delete();

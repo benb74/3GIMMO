@@ -10,7 +10,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
 
-
+    {{--js css--}}
     <link href="{{asset('ccs/bootstrap.min.css')}}" rel="stylesheet"
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="{{asset('js/f55cd37179.js')}}" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@
 
 </head>
 <body>
-
+{{--insert the header from views/template--}}
 @include('template.header')
 
 <main>
@@ -78,8 +78,8 @@
             </div>
         </section>
     </div>
+    {{--    @yiel insert the content of the @extends part in views/catalog/indexProperty--}}
     @yield('content')
-
 </main>
 
 <footer class="text-muted py-5">
