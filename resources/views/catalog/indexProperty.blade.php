@@ -1,10 +1,10 @@
 @extends('home')
 @section('content')
 
-    <div class="album py-5 bg-light">
-        <div class="container">
+    <div class="album py-5" style="background-color: #053840;">
+        <div class="container" style="background-color: #053840;">
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="padding-bottom: 1em">
                 @foreach($properties as $property)
                     <div class="col">
                         <div class="card shadow-sm">

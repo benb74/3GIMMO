@@ -17,6 +17,6 @@ use App\Http\Controllers\Catalog\MainController;
 Route::get('/', [MainController::class, 'index'])->name('index_property');
 Route::get('/addProperty', [MainController::class, 'addProperty'])->name('add_property');
 Route::post('/addProperty', [MainController::class, 'saveProperty'])->name('save_property');
-Route::get('/editProperty/{id}', [MainController::class,'editProperty'])->name('edit_property');
-Route::get('/deleteProperty/{id}', [MainController::class,'deleteProperty'])->name('delete_property');
+Route::get('/editProperty/{id}', [MainController::class, 'editProperty'])->name('edit_property');
+Route::get('/deleteProperty/{id}', [MainController::class, 'deleteProperty'])->name('delete_property');
 Route::post('/updateProperty', [MainController::class, 'updateProperty'])->name('update_property');

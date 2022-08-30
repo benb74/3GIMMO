@@ -21,12 +21,10 @@
 
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+
+
+        .link:hover {
+            cursor: default;
         }
 
         @media (min-width: 768px) {
@@ -35,31 +33,6 @@
             }
         }
 
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
 
         .nav-scroller .nav {
             display: flex;
@@ -80,28 +53,31 @@
 @include('template.header')
 
 <main>
+    <div style="background-color: #053840;">
 
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Notre mission</h1>
-                <p class="lead text-muted">Sélectionner les conseillers immobiliers les plus expérimentés pour vous
-                    proposer la meilleure transaction immobilière possible.</p>
-                <h1 class="fw-light">Vous apporter une visibilité maximale</h1>
-                <p class="lead text-muted">Nous diffusons vos annonces
-                    sur toutes les plus grandes
-                    plateformes immobilières et
-                    celles spécialisées.</p>
-                <p>
-                    <a href="{{route('add_property')}}" class="btn btn-primary my-2">Nouveau bien à vendre</a><br><br>
-                    @if(Session::has('property_deleted'))
-                        <span>{{Session::get('property_deleted')}}</span>
-                    @endif
-                </p>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Notre mission</h1>
+                    <p class="lead text-muted">Sélectionner les conseillers immobiliers les plus expérimentés pour vous
+                        proposer la meilleure transaction immobilière possible.</p>
+                    <h1 class="fw-light">Vous apporter une visibilité maximale</h1>
+                    <p class="lead text-muted">Nous diffusons vos annonces
+                        sur toutes les plus grandes
+                        plateformes immobilières et
+                        celles spécialisées.</p>
+                    <p>
+                        <a href="{{route('add_property')}}" class="btn btn-primary my-2">Nouveau bien à
+                            vendre</a><br><br>
+                        @if(Session::has('property_deleted'))
+                            <span>{{Session::get('property_deleted')}}</span>
+                        @endif
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     @yield('content')
 
 </main>

@@ -13,8 +13,7 @@ class MainController extends Controller
     public function index()
     {
         $properties = Property::all();
-        $sellers = Seller::all();
-        return view('catalog.indexProperty', compact('properties', 'sellers'));
+        return view('catalog.indexProperty', compact('properties'));
     }
 
     public function addProperty()
@@ -37,7 +36,6 @@ class MainController extends Controller
     public function editProperty($id)
     {
         $property = DB::table('properties')->where('id', $id)->first();
-
         return view('catalog.editProperty', compact('property'));
     }
 

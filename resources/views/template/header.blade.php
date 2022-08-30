@@ -13,9 +13,15 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Contact</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Suivez-nous sur Twitter</a></li>
-                        <li><a href="#" class="text-white">Likez nous sur Facebook</a></li>
-                        <li><a href="#" class="text-white">Email</a></li>
+                        <div onclick="window.open('https:\/\/twitter.com\/3GIMMO')">
+                            <li><a class="text-white link">Suivez-nous sur Twitter</a></li>
+                        </div>
+                        <div onclick="window.open('https:\/\/www.linkedin.com\/company\/3g-immo-consultant\/')">
+                            <li><a class="text-white link">Suivez nous sur LinkedIn</a></li>
+                        </div>
+                        <div onclick="window.open('https://www.facebook.com/3GIMMO/')">
+                            <li><a class="text-white link ">Likez nous sur Facebook</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -24,7 +30,7 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
-                <img src="{{asset('img/LOGO3G.png')}}"/>
+                <img src="{{asset('img/LOGO3G.png')}}" alt="Logo"/>
                 <strong>Qui sommes nous ?</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
