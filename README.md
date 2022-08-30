@@ -5,17 +5,17 @@ Crud on the theme of real estate with Framework LARAVEL
 
 ### PHP
 This is a php project.
-Make sure to have php installed locally.
+Make sure to have php 8.0 installed locally.
 
 ### Laravel
 This is a Laravel framework built.
-Make sure to have Laravel installed locally.
+Make sure to have Laravel 8 installed locally.
 
 ### mySQL
 You must have a mySQL server up and running.
 By default, the application will use the following connection string:  
 `host=localhost port=3306 user=root dbname=properties_for_sale_db password=Pa$$w0rd`
-This can be overridden by setting the `DB_URL` env variable.
+This can be overridden by setting the `DB_URL` env variable ine `.env` file.
 
 ### Deployment
 Create a mySQL database named 
@@ -27,11 +27,11 @@ Start up mySql server
 Start up the laravel web server
 `php artisan serve`
 
-Create tables in the database running migration
+Create tables in the database running migrations
 `php artisan migrate`
 
 run the seeders to feed the tables
-`php artisan de:seed`
+`php artisan db:seed`
 
 Go on the laravel localhost adress 
 
