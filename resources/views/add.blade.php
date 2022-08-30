@@ -75,37 +75,10 @@
 
 
 </head>
+
 <body>
-
 @include('template.header')
-
-<main>
-
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Notre mission</h1>
-                <p class="lead text-muted">Sélectionner les conseillers immobiliers les plus expérimentés pour vous
-                    proposer la meilleure transaction immobilière possible.</p>
-                <h1 class="fw-light">Vous apporter une visibilité maximale</h1>
-                <p class="lead text-muted">Nous diffusons vos annonces
-                    sur toutes les plus grandes
-                    plateformes immobilières et
-                    celles spécialisées.</p>
-                <p>
-                    <a href="{{route('add_property')}}" class="btn btn-primary my-2">Nouveau bien à vendre</a><br><br>
-                    @if(Session::has('property_deleted'))
-                        <span>{{Session::get('property_deleted')}}</span>
-                    @endif
-                </p>
-            </div>
-        </div>
-    </section>
-
-    @yield('content')
-
-</main>
-
+@yield('content')
 <footer class="text-muted py-5">
     <div class="container">
         <p class="float-end mb-1">
