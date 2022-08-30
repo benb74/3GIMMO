@@ -30,7 +30,7 @@ Start up the laravel web server
 Create tables in the database running migrations
 `php artisan migrate`
 
-run the seeders to feed the tables
+Run the seeders to feed the tables
 `php artisan db:seed`
 
 Go on the laravel localhost adress 
