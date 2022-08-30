@@ -21,8 +21,6 @@
 
 
     <style>
-
-
         .link:hover {
             cursor: default;
         }

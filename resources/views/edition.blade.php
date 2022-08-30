@@ -21,6 +21,21 @@
 
 
     <style>
+        input[type=text] {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: #d8dee9;
+        }
+
+        a.bold {
+            font-weight: bold;
+            color: black;
+        }
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -82,7 +97,7 @@
 <footer class="text-muted py-5">
     <div class="container">
         <p class="float-end mb-1">
-            <a href="#">Back to top</a>
+            <a href="{{asset('/')}}">Retour</a>
     </div>
 </footer>
 

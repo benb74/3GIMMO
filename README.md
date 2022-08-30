@@ -9,7 +9,7 @@ Make sure to have php 8.0 installed locally.
 
 ### Laravel
 This is a Laravel framework built.
-Make sure to have Laravel 8 installed locally.
+Make sure to have Laravel 9.26 installed locally.
 
 ### mySQL
 You must have a mySQL server up and running.
